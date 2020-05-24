@@ -87,23 +87,23 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="arrival-date">Дата заезда:</label>
-          <input id="arrival-date" type="text" name="arrival date" placeholder="24 апреля 2017">
+          <input id="arrival-date" type="date" name="arrival date">
         </p>
         <p>
           <label for="departure-date">Дата выезда:</label>
-          <input id="departure-date" type="text" name="departure date" placeholder="4 июля 2017">
+          <input id="departure-date" type="date" name="departure date">
         </p>
         <p>
           <label for="number-of-adults">Взрослые:</label>
-          <span class="minus">-</span>
-          <input id="number-of-adults" type="text" name="number of adults" placeholder="2" size="3">
-          <span class="plus">+</span>
+          <button>-</button>
+          <input id="number-of-adults" type="number" name="number of adults" placeholder="2" size="3">
+          <button>+</button>
         </p>
         <p>
           <label for="number-of-childs">Дети:</label>
-          <span class="minus">-</span>
-          <input id="number-of-childs" type="text" name="number of childs" placeholder="0" size="3">
-          <span class="plus">+</span>
+          <button>-</button>
+          <input id="number-of-childs" type="number" name="number of childs" placeholder="0" size="3">
+          <button>+</button>
         </p>
         <button type="submit">Найти</button>
       </form>
