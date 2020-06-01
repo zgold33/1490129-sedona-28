@@ -16,6 +16,7 @@
   --basic-dark-shakespeare:#5496BD;
   --basic-saddle:#604E43;
   --basic-paco:#503E33;
+  --basic-whisper: #EBEBEB;
 }
 
 /* Global */
@@ -56,12 +57,11 @@ img {
   color: var(--basic-black);
 }
 
-/* НЕ ПРОГРУЖАЕТСЯ*/
 .background-images {
   width: 1200px;
   height: 509px;
-  background-image: url("img/shape.png");
-  background-image: url("img/background.jpg");
+  background-image: url(../img/shape.png);
+  background-image: url(../img/background.jpg);
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -110,14 +110,6 @@ img {
 
 .choose-date {
   line-height: 24px;
-}
-
-.choose-date + a {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  color: var(--basic-black)
-  background-color: var(--basic-roman-coffee);
 }
 
 /* main footer */
@@ -184,7 +176,6 @@ img {
   line-height: 26px;
   text-align: center;
   color: var(--basic-white);
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--basic-seagull);
   border: none;
@@ -237,7 +228,6 @@ img {
 .details:active,
 .look-for-button:active,
 .social-network-link:active {
-  opacity: 0.3;
   background-color: var(--basic-dark-shakespeare);
 }
 
@@ -248,7 +238,6 @@ img {
 
 .reserved:active,
 .hotel-search-link:active {
-  opacity: 0.3;
   background-color: var(--basic-paco);
 }
 
@@ -257,14 +246,15 @@ img {
   color: var(--basic-seagull);
 }
 
-.site-navigation .link:active,
-.hotels-list .link:active {
-  color: var(--basic-black);
-  opacity: 0.3;
+.site-navigation .link:focus,
+.hotels-list .link:focus {
+  color: var(--basic-roman-coffee);
 }
 
-.site-navigation .link:focus {
-  color: var(--basic-roman-coffee);
+.site-navigation .link:active,
+.hotels-list .link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .calendar:hover {
   
@@ -290,4 +280,18 @@ img {
 
 .developers:active {
 
+}
+
+.arrival:hover, 
+.departure:hover,
+.adults:hover, 
+.childs:hover {
+  background-color: var(--basic-whisper);
+}
+
+.arrival:focus, 
+.departure:focus,
+.adults:focus, 
+.childs:focus {
+  background-color: var(--basic-white);
 }
