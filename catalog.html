@@ -4,20 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>Выбор жилья</h1>
-    <nav>
+    <h1 class="visually-hidden">Выбор жилья</h1>
+    <nav class="main-navigation">
       <a href="index.html">
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип">
       </a>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+      <ul class="site-navigation">
+        <li><a class="link" href="#">Информация</a></li>
+        <li><a class="link" href="#">Фото и видео</a></li>
+        <li><a class="link" href="#">Карта штата</a></li>
+        <li><a class="link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -25,53 +28,59 @@
   <main>
 
     <section>
-      <h2>Фильтр жилья</h2>
+      <h2 class="visually-hidden">Фильтр жилья</h2>
       <!-- Здесь будет форма фильтра -->
     </section>
 
     <section>
-      <h2>Список гостиниц</h2>
-      <ul>
+      <h2 class="visually-hidden">Список гостиниц</h2>
+      <ul class="hotels-list">
         <li>
           <article>
-            <a href="#">
+            <a class="link" href="#">
               <h3>amara resort & SPA</h3>
             </a>
             <span>гостиница</span>
             <span>от 4000 р.</span>
             <img src="img/hotel-amara-resort.jpg" width="135" height="90" alt="Гостиница Амара Ресорт&СПА">
-            <span>****</span>
-            <span>Рейтинг: 8,5</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <span class="rating">Рейтинг: 8,5</span>
+            <a class="details" href="#">Подробнее</a>
+            <a class="reserved" href="#">Забронировать</a>
           </article>
         </li>
         <li>
           <article>
-            <a href="#">
+            <a class="link" href="#">
               <h3>desert quail inn</h3>
             </a>
             <span>мотель</span>
             <span>от 3000 р.</span>
             <img src="img/hotel-desertQ.jpg" width="135" height="90" alt="Гостиница Десерт Куалли">
-            <span>****</span>
-            <span>Рейтинг: 8,5</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <span class="rating">Рейтинг: 8,5</span>
+            <a class="details" href="#">Подробнее</a>
+            <a class="reserved" href="#">Забронировать</a>
           </article>
         </li>
         <li>
           <article>
-            <a href="#">
+            <a class="link" href="#">
               <h3>villas at poco diablo</h3>
             </a>
             <span>аппартаменты</span>
             <span>от 2000 р.</span>
             <img src="img/hotel-poco-diablo.jpg" width="135" height="90" alt="Гостиница Виллаж эт Пако Дьябло">
-            <span>****</span>
-            <span>Рейтинг: 8,5</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <a class="star" href="#"><img src="img/star.svg" width="19" height="17" alt="Звезда"></a>
+            <span class="rating">Рейтинг: 8,5</span>
+            <a class="details" href="#">Подробнее</a>
+            <a class="reserved" href="#">Забронировать</a>
           </article>
         </li>
       </ul>
@@ -79,24 +88,27 @@
 
   </main>
 
-  <footer>
-    <span>#VISITSEDONA</span>
-    <a href="tel:+74956660166">ТЕЛ:+7(495)666-01-66</a>
+  <footer class="main-footer">
+    <a href="#" class="hashtag">#VISITSEDONA</a>
+    <a class="phone-number" href="tel:+74956660166">ТЕЛ:+7(495)666-01-66 </a>
 
-    <ul>
+    <ul class="social">
       <li>
-        <a href="#">Twitter <img src="img/twitter.svg" width="17" height="17" alt="Сыылка на наш Твиттер"></a>
+        <a class="social-network-link" href="#">Twitter<img src="img/twitter.svg" width="17" height="17"
+            alt="Сcылка на наш Твиттер"></a>
       </li>
       <li>
-        <a href="#">Facebook <img src="img/fb-icon.svg" width="12" height="22" alt="Сылка на нашу страницу Фэйсбук"></a>
+        <a class="social-network-link" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22"
+            alt="Сcылка на нашу страницу Фэйсбук"></a>
       </li>
       <li>
-        <a href="#">YouTube <img src="img/youtube.svg" width="20" height="16" alt="Сылка на наш канал Ютуб"></a>
+        <a class="social-network-link" href="#">Youtube<img src="img/youtube.svg" width="20" height="16"
+            alt="Сcылка на наш канал Ютуб"></a>
       </li>
     </ul>
-    <p>
+    <p class="website-by">
       website by
-      <a href="https://htmlacademy.ru">html academy <img src="img/logo-htmlacademy.svg" width="115" height="41"
+      <a class="developers" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41"
           alt="Logo HTML Academy"></a>
     </p>
   </footer>
