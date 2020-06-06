@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,19 +9,23 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
+<body class="page-body">
+  <header class="main-header">
     <h1 class="visually-hidden">Седона</h1>
     <nav class="main-navigation">
-      <a href="index.html">
+      <a class="main-header-logo" href="index.html">
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип">
       </a>
-      <ul class="site-navigation">
-        <li><a class="link" href="#">Информация</a></li>
-        <li><a class="link" href="#">Фото и видео</a></li>
-        <li><a class="link" href="#">Карта штата</a></li>
-        <li><a class="link" href="catalog.html">Гостиницы</a></li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a class="link" href="#">Информация</a></li>
+            <li><a class="link" href="#">Фото и видео</a></li>
+            <li><a class="link" href="#">Карта штата</a></li>
+            <li><a class="link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -93,33 +97,42 @@
         Седоне</p>
       <a class="hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
     </section>
-    <img src="img/map.jpg" width="1199" height="594" alt="Карта">
+    <section class="map">
+      <h2 class="visually-hidden">Карта Седоны</h2>
+      <img src="img/map.jpg" width="1199" height="594" alt="Карта Седоны">
+    </section>
 
   </main>
 
   <footer class="main-footer">
-    <a href="#" class="hashtag">#VISITSEDONA</a>
-    <a class="phone-number" href="tel:+74956660166">ТЕЛ:+7(495)666-01-66 </a>
+    <div class="container">
+      <section class="contacts">
+        <a href="#" class="hashtag">#VISITSEDONA</a>
+        <a class="phone-number" href="tel:+74956660166">ТЕЛ:+7(495)666-01-66 </a>
+      </section>
 
-    <ul class="social">
-      <li>
-        <a class="social-network-link" href="#">Twitter<img src="img/twitter.svg" width="17" height="17"
-            alt="Сcылка на наш Твиттер"></a>
-      </li>
-      <li>
-        <a class="social-network-link" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22"
-            alt="Сcылка на нашу страницу Фэйсбук"></a>
-      </li>
-      <li>
-        <a class="social-network-link" href="#">Youtube<img src="img/youtube.svg" width="20" height="16"
-            alt="Сcылка на наш канал Ютуб"></a>
-      </li>
-    </ul>
-    <p class="website-by">
-      website by
-      <a class="developers" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41"
-          alt="Logo HTML Academy"></a>
-    </p>
+      <section class="social">
+        <ul>
+          <li>
+            <a class="social-network-link" href="#">Twitter<img src="img/twitter.svg" width="17" height="17"
+                alt="Сcылка на наш Твиттер"></a>
+          </li>
+          <li>
+            <a class="social-network-link" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22"
+                alt="Сcылка на нашу страницу Фэйсбук"></a>
+          </li>
+          <li>
+            <a class="social-network-link" href="#">Youtube<img src="img/youtube.svg" width="20" height="16"
+                alt="Сcылка на наш канал Ютуб"></a>
+          </li>
+        </ul>
+      </section>
+      <p class="website-by">
+        website by
+        <a class="developers" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41"
+            alt="Logo HTML Academy"></a>
+      </p>
+    </div>
   </footer>
 
   <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
