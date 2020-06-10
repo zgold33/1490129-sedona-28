@@ -72,6 +72,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .main-navigation-wrapper {
@@ -88,7 +89,6 @@ img {
   flex-wrap: wrap;
   list-style: none;
   width: 1050px;
-  justify-content: space-between;
 }
 
 /* Logo */
@@ -96,6 +96,7 @@ img {
 .main-header-logo {
   width: 138px;
   height: 70px;
+  position: absolute;
   outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px;
 }
@@ -143,6 +144,33 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.advantages-list {
+  list-style: none
+}
+
+.advantages-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.advantages-list span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.accented-advantage {
+  color: var(--basic-white);
+  background-color: var(--basic-seagull);
+}
+
+.recomendations {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  list-style: none
 }
 
 .hotels-list {
@@ -205,6 +233,30 @@ img {
 
 .map img {
   width: 100%;
+}
+
+.hotels-filter {
+  height: 217px;
+  background-image: url(../img/background2.png);
+  color: var(--basic-white);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.hotels-filter legend {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.hotels-filter button {
+  color: var(--basic-white);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 /* main footer */

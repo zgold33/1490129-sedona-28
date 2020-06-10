@@ -31,45 +31,47 @@
 
   <main>
 
-    <section>
-      <h2 class="visually-hidden">Фильтр жилья</h2>
+    <section class="container hotels-filter">
+      <h2 class="visually-hidden">фильтр жилья</h2>
       <form action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset>
-          <legend>Инфраструктура:</legend>
+          <legend>инфраструктура:</legend>
           <input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
-          <label for="swimming-pool">Бассейн</label>
+          <label for="swimming-pool">бассейн</label>
           <input type="checkbox" name="parking" id="parking">
-          <label for="parking">Парковка</label>
+          <label for="parking">парковка</label>
           <input type="checkbox" name="Wi-Fi" id="Wi-Fi">
-          <label for="Wi-Fi">Wi-Fi</label>
+          <label for="Wi-Fi">wi-Fi</label>
         </fieldset>
         <fieldset>
-          <legend>Тип жилья:</legend>
+          <legend>тип жилья:</legend>
           <input type="checkbox" name="hotels" id="hotels" checked>
-          <label for="hotels">Гостиница</label>
+          <label for="hotels">гостиница</label>
           <input type="checkbox" name="motels" id="motels" checked>
-          <label for="motels">Мотель</label>
+          <label for="motels">мотель</label>
           <input type="checkbox" name="apartments" id="apartments" checked>
-          <label for="apartments">Апартаменты</label>
+          <label for="apartments">апартаменты</label>
         </fieldset>
         <div>
           <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
+            <legend>стоимость в сутки (Р):</legend>
             <div>
-              <label>От<input type="text" name="min-price" placeholder="0"></label>
-              <label>До<input type="text" name="max-price" placeholder="3000"></label>
+              <input type="text" name="min-price" Id="min-price" placeholder="От 0">
+              <label class="visually-hidden" for="min-price">минимальная цена</label>
+              <input type="text" name="max-price" Id="max-price" placeholder="До 3000">
+              <label class="visually-hidden" for="max-price">максимальная цена</label>
             </div>
             <div>
               <input type="range" min="0" max="3000" step="10">
             </div>
           </fieldset>
         </div>
-        <button type="submit">Показать</button>
+        <button type="submit">показать</button>
       </form>
     </section>
 
     <section>
-      <h2 class="visually-hidden">Список гостиниц</h2>
+      <h2 class="visually-hidden">список гостиниц</h2>
       <ul class="hotels-list">
         <li class="hotels-list-item">
           <article class="container">
