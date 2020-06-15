@@ -12,36 +12,34 @@
 <body class="page-body">
   <header class="main-header">
     <h1 class="visually-hidden">Седона</h1>
+    <div class="main-navigation-wrapper"></div>
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип">
       </a>
-      <div class="main-navigation-wrapper">
-        <div class="container">
-          <ul class="site-navigation">
-            <li><a class="link" href="#">Информация</a></li>
-            <li><a class="link" href="#">Фото и видео</a></li>
-            <li><a class="link" href="#">Карта штата</a></li>
-            <li><a class="link" href="catalog.html">Гостиницы</a></li>
-          </ul>
-        </div>
-      </div>
+      <ul class="site-navigation">
+        <li><a class="link" href="#">Информация</a></li>
+        <li><a class="link" href="#">Фото и видео</a></li>
+        <li><a class="link" href="#">Карта штата</a></li>
+        <li><a class="link not-active-btn" href="catalog.html">Гостиницы</a></li>
+      </ul>
     </nav>
+    </div>
   </header>
 
   <main>
 
     <section class="container hotels-filter">
       <h2 class="visually-hidden">фильтр жилья</h2>
-      <form action="https://echo.htmlacademy.ru/" method="GET">
+      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset>
           <legend>инфраструктура:</legend>
           <input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
           <label for="swimming-pool">бассейн</label>
           <input type="checkbox" name="parking" id="parking">
           <label for="parking">парковка</label>
-          <input type="checkbox" name="Wi-Fi" id="Wi-Fi">
-          <label for="Wi-Fi">wi-Fi</label>
+          <input type="checkbox" name="wi-fi" id="wi-fi">
+          <label for="wi-fi">wi-Fi</label>
         </fieldset>
         <fieldset>
           <legend>тип жилья:</legend>
@@ -52,22 +50,47 @@
           <input type="checkbox" name="apartments" id="apartments" checked>
           <label for="apartments">апартаменты</label>
         </fieldset>
-        <div>
-          <fieldset>
-            <legend>стоимость в сутки (Р):</legend>
-            <div>
-              <input type="text" name="min-price" Id="min-price" placeholder="От 0">
+        <fieldset class="filter-item">
+          <legend>стоимость в сутки (Р):</legend>
+          <div class="range-filter">
+            <div class="price-controls">
+              <input type="number" name="min-price" id="min-price" placeholder="от 0">
               <label class="visually-hidden" for="min-price">минимальная цена</label>
-              <input type="text" name="max-price" Id="max-price" placeholder="До 3000">
+              <input type="number" name="max-price" id="max-price" placeholder="до 3000">
               <label class="visually-hidden" for="max-price">максимальная цена</label>
             </div>
-            <div>
-              <input type="range" min="0" max="3000" step="10">
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="width: 30%; margin-left: 20%"></div>
             </div>
-          </fieldset>
-        </div>
-        <button type="submit">показать</button>
+            <div class=" toggle toggle-min" tabindex="0" style="left: 0%"></div>
+            <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
+          </div>
+          <button class="btn" type="submit">показать</button>
+        </fieldset>
       </form>
+    </section>
+
+    <section class="container sort-by">
+      <h2 class="visually-hidden">Принципы сортировки гостиниц</h2>
+      <span>найдено: 3</span>
+      <p class="sort-attribute">
+        сортировка:
+        <button class="btn-sort price" type="button">по цене</button>
+        <button class="btn-sort type" type="button">по типу</button>
+        <button class="btn-sort rate" type="button">по рейтингу</button>
+      </p>
+      <p class="sort-direction">
+        <button type="button">
+          <a class="btn-up" href="#"><img src="img/icon-up-dir.svg" width="11" height="10"
+              alt="Сортировать по возрастанию"></a>
+        </button>
+        <button type="button">
+          <a class="btn-down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10"
+              alt="Сортировать по убыванию"></a>
+        </button>
+      </p>
     </section>
 
     <section>
@@ -151,15 +174,15 @@
       <section class="social">
         <ul>
           <li>
-            <a class="social-network-link" href="#">Twitter<img src="img/twitter.svg" width="17" height="17"
+            <a class="social-network-link soclink-1" href="#">Twitter<img src="img/twitter.svg" width="17" height="17"
                 alt="Сcылка на наш Твиттер"></a>
           </li>
           <li>
-            <a class="social-network-link" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22"
+            <a class="social-network-link soclink-2" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22"
                 alt="Сcылка на нашу страницу Фэйсбук"></a>
           </li>
           <li>
-            <a class="social-network-link" href="#">Youtube<img src="img/youtube.svg" width="20" height="16"
+            <a class="social-network-link soclink-3" href="#">Youtube<img src="img/youtube.svg" width="20" height="16"
                 alt="Сcылка на наш канал Ютуб"></a>
           </li>
         </ul>

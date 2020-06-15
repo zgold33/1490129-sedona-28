@@ -12,21 +12,19 @@
 <body class="page-body">
   <header class="main-header">
     <h1 class="visually-hidden">Седона</h1>
+    <div class="main-navigation-wrapper"></div>
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип">
       </a>
-      <div class="main-navigation-wrapper">
-        <div class="container">
-          <ul class="site-navigation">
-            <li><a class="link" href="#">Информация</a></li>
-            <li><a class="link" href="#">Фото и видео</a></li>
-            <li><a class="link" href="#">Карта штата</a></li>
-            <li><a class="link" href="catalog.html">Гостиницы</a></li>
-          </ul>
-        </div>
-      </div>
+      <ul class="site-navigation">
+        <li><a class="link" href="#">Информация</a></li>
+        <li><a class="link" href="#">Фото и видео</a></li>
+        <li><a class="link" href="#">Карта штата</a></li>
+        <li><a class="link" href="catalog.html">Гостиницы</a></li>
+      </ul>
     </nav>
+    </div>
   </header>
 
   <main>
@@ -42,7 +40,7 @@
       <span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</span>
     </section>
 
-    <section class="container">
+    <section class="container filters">
       <h2 class="visually-hidden">Преимущества Седона</h2>
       <ul class="advantages-list">
         <li class="advantages-list-item accented-advantage">
@@ -69,17 +67,17 @@
           <span>-№2-</span>
           <span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
         </li>
-        <li class="advantages-list-item">
+        <li class="advantages-list-item item-3">
           <h3>Небольшая площадь</h3>
           <span>-№3-</span>
           <span>Все достопримечательности находятся очень близко</span>
         </li>
-        <li class="advantages-list-item">
+        <li class="advantages-list-item  item-4">
           <h3>Красивая дорога</h3>
           <span>-№4-</span>
           <span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
         </li>
-        <li class="advantages-list-item">
+        <li class="advantages-list-item  item-5">
           <h3>Мало туристов</h3>
           <span>-№5-</span>
           <span>Большинство едет в Гранд каньон и толпится там</span>
@@ -95,7 +93,7 @@
       <a class="hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
     </section>
 
-    <form class="visually-hidden appointment" action="https://echo.htmlacademy.ru" method="post">
+    <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="arrival-date">Дата заезда:</label>
         <input class="arrival" id="arrival-date" type="date" name="arrival-date" value="2017-04-24">
@@ -144,16 +142,21 @@
       <section class="social">
         <ul>
           <li>
-            <a class="social-network-link" href="#">Twitter<img src="img/twitter.svg" width="17" height="17"
-                alt="Сcылка на наш Твиттер"></a>
+            <a class="social-network-link" href="#">
+              <span class="visually-hidden">Twitter</span>
+              <img src="img/twitter.svg" width="17" height="17" alt="Сcылка на наш Твиттер">
+            </a>
           </li>
           <li>
-            <a class="social-network-link" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22"
-                alt="Сcылка на нашу страницу Фэйсбук"></a>
+            <a class="social-network-link" href="#">
+              <span class="visually-hidden">Facebook</span>
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Сcылка на нашу страницу Фэйсбук"></a>
           </li>
           <li>
-            <a class="social-network-link" href="#">Youtube<img src="img/youtube.svg" width="20" height="16"
-                alt="Сcылка на наш канал Ютуб"></a>
+            <a class="social-network-link" href="#">
+              <span class="visually-hidden">Youtube</span>
+              <img src="img/youtube.svg" width="20" height="16" alt="Сcылка на наш канал Ютуб">
+            </a>
           </li>
         </ul>
       </section>
