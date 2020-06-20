@@ -12,162 +12,190 @@
 <body class="page-body">
   <header class="main-header">
     <h1 class="visually-hidden">Седона</h1>
-    <div class="main-navigation-wrapper"></div>
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип">
-      </a>
-      <ul class="site-navigation">
-        <li><a class="link" href="#">Информация</a></li>
-        <li><a class="link" href="#">Фото и видео</a></li>
-        <li><a class="link" href="#">Карта штата</a></li>
-        <li><a class="link" href="catalog.html">Гостиницы</a></li>
-      </ul>
-    </nav>
+    <div class="main-navigation-wrapper">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип">
+        </a>
+        <ul class="site-navigation">
+          <li><a class="link" href="#">Информация</a></li>
+          <li><a class="link" href="#">Фото и видео</a></li>
+          <li><a class="link" href="#">Карта штата</a></li>
+          <li><a class="link" href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-
     <section class="background-images">
       <h2 class="visually-hidden">Картинки заднего фона</h2>
       <img src="img/welcome.png" width="457" height="351" alt="Добро пожаловать в Седону">
     </section>
-
     <section class="advantages">
       <h2 class="visually-hidden">Седона</h2>
-      <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
       <span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</span>
     </section>
-
-    <section class="container filters">
+    <section class="filters">
       <h2 class="visually-hidden">Преимущества Седона</h2>
       <ul class="advantages-list">
         <li class="advantages-list-item accented-advantage">
-          <h3>Настоящий городок</h3>
-          <span>-№1-</span>
-          <span>Седона не аттракцион для туристов, там течёт своя жизнь</span>
+          <div class="advantages-row">
+            <div class="advantages-description">
+              <h3>Настоящий<br />городок</h3>
+              <span class="advantage-number">-№1-</span>
+              <span>Седона не аттракцион для туристов, там течёт своя жизнь</span>
+            </div>
+            <img src="img/advantage1.jpg" alt="Изображение города" width="800" height="256">
+          </div>
           <ul class="recomendations">
             <li class="recomendations-item">
+              <img src="img/house.png" alt="Иконка домика" width="75" height="72">
               <h3>Жильё</h3>
-              <span>Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+              <span>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</span>
             </li>
             <li class="recomendations-item">
+              <img src="img/burger.png" alt="Иконка бургера" width="75" height="70">
               <h3>Еда</h3>
-              <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+              <span>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</span>
             </li>
             <li class="recomendations-item">
+              <img src="img/souvenir.png" alt="Иконка коробки с сувенирами" width="64" height="77">
               <h3>Сувениры</h3>
               <span>Не только китайского, но и местного производства!</span>
             </li>
           </ul>
         </li>
         <li class="advantages-list-item accented-advantage">
-          <h3>Там есть мост дьявола</h3>
-          <span>-№2-</span>
-          <span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
+          <div class="advantages-row">
+            <img src="img/advantage2.jpg" alt="Изображение моста дьявола" width="800" height="256">
+            <div class="advantages-description">
+              <h3>Там есть мост дьявола</h3>
+              <span class="advantage-number">-№2-</span>
+              <span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
+            </div>
+          </div>
         </li>
-        <li class="advantages-list-item item-3">
+        <li class="advantages-list-item base-advantage">
           <h3>Небольшая площадь</h3>
-          <span>-№3-</span>
+          <span class="advantage-number">-№3-</span>
           <span>Все достопримечательности находятся очень близко</span>
         </li>
-        <li class="advantages-list-item  item-4">
+        <li class="advantages-list-item base-advantage">
           <h3>Красивая дорога</h3>
-          <span>-№4-</span>
+          <span class="advantage-number">-№4-</span>
           <span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
         </li>
-        <li class="advantages-list-item  item-5">
+        <li class="advantages-list-item base-advantage">
           <h3>Мало туристов</h3>
-          <span>-№5-</span>
+          <span class="advantage-number">-№5-</span>
           <span>Большинство едет в Гранд каньон и толпится там</span>
         </li>
       </ul>
     </section>
-
     <section class="hotel-search">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <span>Заинтересовались?</span>
       <p class="choose-date">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
       <a class="hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
+      <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
+        <p class="date">
+          <label for="arrival-date">Дата заезда:</label>
+          <input class="arrival" id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017">
+          <button class="calendar" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+              <path
+                d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+              <path
+                d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+            </svg>
+          </button>
+        </p>
+        <p class="date">
+          <label for="departure-date">Дата выезда:</label>
+          <input class="departure" id="departure-date" type="text" name="departure-date" value="4 июля 2017">
+          <button class="calendar" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+              <path
+                d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+              <path
+                d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+            </svg>
+          </button>
+        </p>
+        <p class="numbers1">
+          <label for="number-of-adults">Взрослые:</label>
+          <button class="button-minus1" type="button"><svg width="12" height="3" viewBox="0 0 12 3" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="12" height="3" fill="#A9A9A9" /></svg>
+          </button>
+          <input class="adults" id="number-of-adults" type="number" name="number-of-adults" min="0" max="5" value="2">
+          <button class="button-plus1" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                fill="#A9A9A9" /></svg>
+          </button>
+        </p>
+        <p class="numbers2">
+          <label for="number-of-childs">Дети:</label>
+          <button class="button-minus2" type="button"><svg width="12" height="3" viewBox="0 0 12 3" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="12" height="3" fill="#A9A9A9" /></svg>
+          </button>
+          <input class="childs" id="number-of-childs" type="number" name="number-of-childs" min="0" max="5" value="0">
+          <button class="button-plus2" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                fill="#A9A9A9" />
+            </svg>
+          </button>
+        </p>
+        <button class="look-for-button" type="submit">Найти</button>
+      </form>
     </section>
-
-    <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="arrival-date">Дата заезда:</label>
-        <input class="arrival" id="arrival-date" type="date" name="arrival-date" value="2017-04-24">
-        <button class="calendar" type="button"><img src="img/calendar.svg" width="21" height="23"
-            alt="Каледарь"></button>
-      </p>
-      <p>
-        <label for="departure-date">Дата выезда:</label>
-        <input class="departure" id="departure-date" type="date" name="departure-date" value="2017-06-04">
-        <button class="calendar" type="button"><img src="img/calendar.svg" width="21" height="23"
-            alt="Каледарь"></button>
-      </p>
-      <p>
-        <label for="number-of-adults">Взрослые:</label>
-        <button class="button-minus" type="button"><img src="img/minus.svg" width="12" height="3"
-            alt="Убавить"></button>
-        <input class="adults" id="number-of-adults" type="number" name="number-of-adults" min="0" max="5" value="2">
-        <button class="button-plus" type="button"><img src="img/plus.svg" width="11" height="11"
-            alt="Прибавить"></button>
-      </p>
-      <p>
-        <label for="number-of-childs">Дети:</label>
-        <button class="button-minus" type="button"><img src="img/minus.svg" width="12" height="3"
-            alt="Убавить"></button>
-        <input class="childs" id="number-of-childs" type="number" name="number-of-childs" min="0" max="5" value="0">
-        <button class="button-plus" type="button"><img src="img/plus.svg" width="11" height="11"
-            alt="Прибавить"></button>
-      </p>
-      <button class="look-for-button" type="submit">Найти</button>
-    </form>
-
     <section class="map">
       <h2 class="visually-hidden">Карта Седоны</h2>
       <img src="img/map.jpg" width="1199" height="594" alt="Карта Седоны">
     </section>
-
   </main>
 
-  <footer class="main-footer">
-    <div class="container">
-      <section class="contacts">
+  <footer class="footer">
+    <section class="main-footer">
+      <div class="contacts">
+        <h2 class="visually-hidden">Телефонный номер</h2>
         <a href="#" class="hashtag">#VISITSEDONA</a>
-        <a class="phone-number" href="tel:+74956660166">ТЕЛ:+7(495)666-01-66 </a>
-      </section>
-
-      <section class="social">
-        <ul>
-          <li>
-            <a class="social-network-link" href="#">
-              <span class="visually-hidden">Twitter</span>
-              <img src="img/twitter.svg" width="17" height="17" alt="Сcылка на наш Твиттер">
-            </a>
-          </li>
-          <li>
-            <a class="social-network-link" href="#">
-              <span class="visually-hidden">Facebook</span>
-              <img src="img/fb-icon.svg" width="12" height="22" alt="Сcылка на нашу страницу Фэйсбук"></a>
-          </li>
-          <li>
-            <a class="social-network-link" href="#">
-              <span class="visually-hidden">Youtube</span>
-              <img src="img/youtube.svg" width="20" height="16" alt="Сcылка на наш канал Ютуб">
-            </a>
-          </li>
-        </ul>
-      </section>
+        <a class="phone-number" href="tel:+74956660166">ТЕЛ:+7(495)666-01-66</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a class="social-network-link" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <img src="img/twitter.svg" width="17" height="17" alt="Сcылка на наш Твиттер">
+          </a>
+        </li>
+        <li>
+          <a class="social-network-link" href="#">
+            <span class="visually-hidden">Facebook</span>
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Сcылка на нашу страницу Фэйсбук"></a>
+        </li>
+        <li>
+          <a class="social-network-link" href="#">
+            <span class="visually-hidden">Youtube</span>
+            <img src="img/youtube.svg" width="20" height="16" alt="Сcылка на наш канал Ютуб">
+          </a>
+        </li>
+      </ul>
       <p class="website-by">
         website by
         <a class="developers" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41"
             alt="Logo HTML Academy"></a>
       </p>
-    </div>
+    </section>
   </footer>
-
 </body>
 
 </html>
