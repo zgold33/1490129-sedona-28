@@ -426,6 +426,8 @@ input[type="checkbox"].visually-hidden {
 .social {
   display: flex;
   justify-content: space-around;
+  position: relative;
+  top: 5px;
   width: 150px;
   margin: 0 auto;
   padding: 10px 0 0 0;
@@ -435,6 +437,8 @@ input[type="checkbox"].visually-hidden {
 .website-by {
   display: flex;
   align-items: center;
+  position: relative;
+  top: 6px;
   width: 400px;
   margin: 0;
   text-align: center;
@@ -465,6 +469,9 @@ svg:active .svg-htmlacademy {
 }
 
 .phone-number {
+  position: relative;
+  top: 1px;
+  left: 2px;
   padding-left: 7px;
   font-weight: bold;
   font-size: 21px;
@@ -524,7 +531,6 @@ svg:active .svg-htmlacademy {
   font-weight: bold;
   line-height: 26px;
   background-color: var(--basic-white);
-  /* margin-right: 25px; */
 }
 
 .appointment p {
@@ -696,7 +702,7 @@ svg:active .svg-plus {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  margin-left: 73px;
+  margin-left: 71px;
   margin-right: 0;
   width: 150px;
   padding: 0;
@@ -704,17 +710,17 @@ svg:active .svg-plus {
 
 .infrastructure div:nth-child(2) {
   position: absolute;
-  bottom: 91px;
+  bottom: 93px;
 }
 
 .infrastructure div:nth-child(3) {
   position: absolute;
-  bottom: 45px;
+  bottom: 47px;
 }
 
 .infrastructure div:last-child {
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
 }
 
 .hotel-type {
@@ -727,23 +733,24 @@ svg:active .svg-plus {
 
 .hotel-type div:nth-child(2) {
   position: absolute;
-  bottom: 91px;
+  bottom: 93px;
 }
 
 .hotel-type div:nth-child(3) {
   position: absolute;
-  bottom: 45px;
+  bottom: 47px;
 }
 
 .hotel-type div:last-child {
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
 }
 
 .filter-item {
   position: relative;
   right: -73px;
   margin: 0;
+  margin-left: 10px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -758,20 +765,41 @@ svg:active .svg-plus {
   text-align: left;
 }
 
+.filter-item button {
+  margin-right: 5px;
+}
+
 .price-controls {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
   height: 36px;
   margin-top: 10px;
+  border: 2px solid var(--basic-white);
 }
 
 .price-controls input {
   text-align: center;
   background-color: transparent;
-  border-color: var(--basic-white);
   color: var(--basic-white);
-  border-radius: 2px;
+  text-transform: uppercase;
+  width: 157px;
+}
+
+.price-controls :first-child {
+  border-right: hidden;
+}
+
+.price-controls:after {
+  content: url("../img/vertical-line.svg");
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  bottom: 99px;
+  right: 158px;
+}
+
+.price-controls :nth-child(3) {
+  border-left: hidden;
 }
 
 .range-controls {
@@ -796,24 +824,21 @@ svg:active .svg-plus {
   position: absolute;
   top: 31px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 19px;
+  height: 21px;
   padding: 0;
-  border: 8px solid var(--basic-white);
-  background-color: var(--basic-hex-gray);
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 var(--very-light-grey);
+  background-image: url("../img/toggle.svg");
   cursor: pointer;
 }
 
 .range-controls .toggle-min {
   left: 18px;
-  top: 13px;
+  top: 12px;
 }
 
 .range-controls .toggle-max {
   left: 160px;
-  top: 13px;
+  top: 12px;
 }
 
 .range-controls .toggle-min:hover,
@@ -825,7 +850,7 @@ svg:active .svg-plus {
 
 .btn {
   position: absolute;
-  right: 95px;
+  right: 92px;
   bottom: 0;
   height: 36px;
   width: 137px;
@@ -846,7 +871,7 @@ svg:active .svg-plus {
 
 .check label {
   position: relative;
-  left: 39px;
+  left: 40px;
   display: block;
   cursor: pointer;
   user-select: none;
@@ -860,7 +885,7 @@ svg:active .svg-plus {
 .check-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -39px;
+  left: -40px;
   width: 23px;
   height: 23px;
   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"%3E%3Cpath fill="%23FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/%3E%3C/svg%3E');
@@ -884,7 +909,7 @@ svg:active .svg-plus {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 73px;
+  padding-right: 69px;
   display: grid;
   grid-template-columns: 208px auto 200px;
   background-color: var(--basic-white);
@@ -894,7 +919,9 @@ svg:active .svg-plus {
 
 .sort-by span {
   display: inline-block;
-  margin-left: 73px;
+  vertical-align: top;
+  margin-left: 72px;
+  margin-top: -1px;
   width: 135px;
   padding-right: 0;
   margin-right: 0;
@@ -904,9 +931,9 @@ svg:active .svg-plus {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-top: 0;
+  margin-top: 1px;
   margin-bottom: 0;
-  margin-left: 29px;
+  margin-left: 27px;
   padding: 0;
 }
 
@@ -915,6 +942,7 @@ svg:active .svg-plus {
   justify-content: flex-end;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 4px;
 }
 
 .sort-by p {
@@ -992,24 +1020,47 @@ border-color: var(--basic-seagull);
   height: 90px;
 }
 
+.hotel-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 0;
+  margin-left: 29px;
+  width: 260px;
+  height: 90px;
+}
+
+
+
 .hotels-list .link {
   display: block;
   margin: 0;
   align-items: flex-start;
 }
 
-.margin0 {
+.hotels-name {
   margin: 0;
+  position: relative;
+  bottom: 5px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
 }
 
-.element1 {
+.element1 {  
+  position: relative;
+  bottom: 1px;
+  right: 1px;
   width: 110px;
   margin-right: 6px;
   margin-top: 7px;
   margin-bottom: 10px;
 }
 
-.element2 {
+.element2 {  
+  position: relative;
+  bottom: 1px;
+  right: 1px;
   width: 142px;
   margin-top: 7px;
   margin-bottom: 10px;
@@ -1041,6 +1092,9 @@ border-color: var(--basic-seagull);
 }
 
 .details {
+  position: relative;
+  top: 2px;
+  right: 2px;
   padding: 3px 17px;
   font-weight: 400;
   line-height: 21px;
@@ -1049,6 +1103,9 @@ border-color: var(--basic-seagull);
 }
 
 .reserved {
+  position: relative;
+  top: 2px;
+  right: 2px;
   padding: 3px 17px;
   font-weight: 400;
   line-height: 21px;
@@ -1204,7 +1261,7 @@ svg:active .svg-down {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 23px 0 46px;
+  padding: 22px 0 42px;
   width: 100%;
   background-color: var(--basic-white-90);
   display: grid;
@@ -1220,6 +1277,8 @@ svg:active .svg-down {
 .contacts {
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 2px;
   text-align: center;
   padding-left: 50px;
 }
