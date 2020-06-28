@@ -1,8 +1,8 @@
 var bookingLink = document.querySelector(".hotel-search-link");
 var bookingPopup = document.querySelector(".modal");
 var bookingForm = document.querySelector(".appointment");
-var bookingCheckin = document.querySelector(".arrival")
-var bookingCheckout = document.querySelector(".departure")
+var bookingCheckin = document.querySelector(".arrival");
+var bookingCheckout = document.querySelector(".departure");
 var bookingAdults = document.querySelector(".adults");
 var bookingKids = document.querySelector(".childs");
 
@@ -32,7 +32,6 @@ window.addEventListener("keydown", function (evt) {
 });
 
 bookingForm.addEventListener("submit", function (evt) {
-  evt.preventDefault();
   if (!bookingCheckin.value || !bookingCheckout.value || !bookingAdults.value || !bookingKids.value) {
     evt.preventDefault();
     bookingPopup.classList.remove("modal-error");
