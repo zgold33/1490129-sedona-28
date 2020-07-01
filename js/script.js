@@ -26,7 +26,6 @@ window.addEventListener("keydown", function (evt) {
     if (bookingPopup.classList.add("modal-hide")) {
       evt.preventDefault();
       loginPopup.classList.remove("modal-hide");
-      loginPopup.classList.remove("modal-error");
     }
   }
 });
