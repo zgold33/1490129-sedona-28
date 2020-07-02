@@ -27,7 +27,6 @@
     --box-shadow-color: rgba(171, 171, 171, 0.3);
 }
 
-
 /* Global */
 
 *,
@@ -58,7 +57,6 @@ img {
     height: auto;
 }
 
-
 /* Grid */
 
 .main-header,
@@ -80,7 +78,6 @@ img {
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 }
-
 
 /* Main navigation */
 
@@ -154,6 +151,7 @@ img {
     width: 100%;
     height: 509px;
     background-image: url(../img/background.jpg);
+    background-color: var(--basic-seagull);
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -266,9 +264,11 @@ input[type="checkbox"].visually-hidden {
     margin: 7px 0 24px 0;
 }
 
+.recommendations span {
+    color: var(--basic-night-rider);
+}
+
 .recommendations {
-    position: relative;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: var(--basic-white);
@@ -277,96 +277,71 @@ input[type="checkbox"].visually-hidden {
     padding: 0;
 }
 
-.recommendations span {
-    color: var(--basic-night-rider);
-}
-
 .recommendations-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    display: block;
     text-align: center;
 }
 
-.house h3::before {
-    content: url("../img/house.svg");
-    position: absolute;
-    top: 58px;
-    left: 161px;
-} 
-
-.house {
-    display: flex;
-    width: 100%;
+.recommendations-item:first-child {
+    padding-top: 137px;
+    padding-right: 73px;
+    padding-bottom: 76px;
+    padding-left: 73px;
 }
 
-.house h3 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    width: 400px;
-    min-height: 152px;
-    padding-left: 151px;
+.recommendations-item:nth-child(2) {
+    padding-top: 138px;
+    padding-right: 52px;
+    padding-bottom: 76px;
+    padding-left: 51px;
 }
 
-.house span {
-    display: flex;
-    min-height: 120px;
-    padding-left: 60px;
-    padding-top: 5px;
+.recommendations-item:last-child {
+    padding-top: 137px;
+    padding-right: 64px;
+    padding-bottom: 75px;
+    padding-left: 65px;
 }
 
-/*
-.burger h3::before {
-    content: url("../img/burger.svg");
-    position: absolute;
-    right: -20px;
-    bottom: 47px;
-} */
-
-.burger {
-    display: flex;
-    width: 100%;
+.point-img {
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.burger h3 {
-    display: flex;
-    align-items: flex-end;
-    min-height: 152px;
-    padding-left: 60px;
-}
-
-.burger span {
-    display: flex;
-    min-height: 120px;
-    padding-left: 60px;
-    padding-top: 5px;
-}
-
-/*
-.souvenir h3::before {
-    content: url("../img/souvenir.svg");
-    position: absolute;
-    right: 168px;
-    top: 55px;
-} */
-
+.house,
+.burger,
 .souvenir {
-    display: flex;
-
+    position: relative;
 }
 
-.souvenir h3 {
-    display: flex;
-
+.house::before {
+    content: "";
+    width: 75px;
+    height: 72px;
+    position: absolute;
+    background-image: url("../img/house.svg");
+    top: -100px;
+    right: 90px;
 }
 
-.souvenir span {
-    display: flex;
+.burger::before {
+    content: "";
+    width: 75px;
+    height: 70px;
+    position: absolute;
+    background-image: url("../img/burger.svg");
+    top: -100px;
+    right: 110px;
+}
 
+.souvenir::before {
+    content: "";
+    width: 64px;
+    height: 77px;
+    position: absolute;
+    background-image: url("../img/souvenir.svg");
+    top: -102px;
+    right: 106px;
 }
 
 .base-advantage {
@@ -429,7 +404,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-search-link {
-    padding: 30px 137px;
+    padding: 31px 138px;
     vertical-align: middle;
     color: var(--basic-white);
     background-color: var(--basic-roman-coffee);
@@ -482,7 +457,7 @@ input[type="checkbox"].visually-hidden {
     flex-wrap: wrap;
     position: relative;
     justify-content: center;
-    top: 5px;
+    top: 11px;
     width: 400px;
     margin: 0 auto;
     padding: 10px 0 0 0;
@@ -493,7 +468,7 @@ input[type="checkbox"].visually-hidden {
     display: flex;
     align-items: center;
     position: relative;
-    top: 6px;
+    top: 11px;
     width: 400px;
     margin: 0;
     text-align: center;
@@ -527,6 +502,7 @@ svg:active .svg-htmlacademy {
 }
 
 .hashtag {
+    padding-top: 10px;
     padding-left: 22px;
     padding-bottom: 8px;
     font-weight: bold;
@@ -539,7 +515,7 @@ svg:active .svg-htmlacademy {
     position: relative;
     top: 1px;
     left: 2px;
-    padding-left: 7px;
+    padding-left: 15px;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -648,12 +624,14 @@ svg:active .svg-htmlacademy {
     right: 2px;
 }
 
-svg:hover .svg-calendar {
+.svg-calendar:hover {
     fill: var(--basic-black);
+    cursor: pointer;
 }
 
-svg:active .svg-calendar {
+.svg-calendar:active {
     fill: var(--basic-seagull);
+    cursor: pointer;
 }
 
 .adults {
@@ -708,20 +686,16 @@ svg:active .svg-calendar {
     top: 12px;
 }
 
-svg:hover .svg-minus {
+.svg-minus:hover,
+.svg-plus:hover {
     fill: var(--basic-black);
+    cursor: pointer;
 }
 
-svg:active .svg-minus {
+.svg-minus:active,
+.svg-plus:active {
     fill: var(--basic-seagull);
-}
-
-svg:hover .svg-plus {
-    fill: var(--basic-black);
-}
-
-svg:active .svg-plus {
-    fill: var(--basic-seagull);
+    cursor: pointer;
 }
 
 .numbers2 {
@@ -981,18 +955,6 @@ svg:active .svg-plus {
     color: var(--basic-black);
 }
 
-
-/*
-.range-controls .toggle-min:hover,
-.range-controls .toggle-max:hover {
-    width: 23px;
-    height: 24px;
-    background-image: url("../img/big-toggle.svg");
-}   */
-
-
-/* check */
-
 .check label {
     position: relative;
     left: 40px;
@@ -1193,17 +1155,6 @@ svg:active .svg-plus {
     min-height: 90px;
 }
 
-/*
-.hotel-2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-top: 0;
-    margin-left: 29px;
-    width: 260px;
-    height: 90px;
-} */
-
 .hotels-list .link {
     display: block;
     margin: 0;
@@ -1267,6 +1218,39 @@ svg:active .svg-plus {
     background-color: var(--basic-roman-coffee);
 }
 
+.first-rating::before {
+    position: absolute;
+    content: "";
+    width: 91px;
+    height: 17px;
+    background-image: url("../img/4-stars.svg");
+    background-repeat: no-repeat;
+    top: -63px;
+    right: -2px;
+}
+
+.second-rating::before {
+    position: absolute;
+    content: "";
+    width: 91px;
+    height: 17px;
+    background-image: url("../img/3-stars.svg");
+    background-repeat: no-repeat;
+    top: -63px;
+    right: -25px;
+}
+
+.third-rating::before {
+    position: absolute;
+    content: "";
+    width: 91px;
+    height: 17px;
+    background-image: url("../img/2-stars.svg");
+    background-repeat: no-repeat;
+    top: -63px;
+    right: -50px;
+}
+
 .hotel-rating {
     display: flex;
     flex-wrap: wrap;
@@ -1275,12 +1259,11 @@ svg:active .svg-plus {
     width: 110px;
 }
 
-.star {
-    padding-left: 5px;
-}
-
 .rating {
+    position: relative;
+    display: flex;
     align-self: flex-end;
+    padding: 3px 12px 3px 15px;
 }
 
 .hotels-list {
@@ -1325,13 +1308,8 @@ svg:active .svg-plus {
     height: 48px;
     color: inherit;
     background-color: var(--basic-seagull);
-    margin: 6px;
+    margin: 3px;
 }
-
-.rating {
-    padding: 3px 12px 3px 15px;
-}
-
 
 /*active-hover */
 
@@ -1422,7 +1400,7 @@ svg:active .svg-down {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 22px 0 42px;
+    padding: 12px 0 42px;
     width: 100%;
     background-color: var(--basic-white-90);
     display: grid;
@@ -1444,21 +1422,50 @@ svg:active .svg-down {
     padding-left: 50px;
 }
 
-
 /* Chrome, Safari, Edge, Opera */
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.adults::-webkit-outer-spin-button,
+.adults::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
+.childs::-webkit-outer-spin-button,
+.childs::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.max-price::-webkit-outer-spin-button,
+.max-price::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.min-price::-webkit-outer-spin-button,
+.min-price::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 /* Firefox */
 
-input[type="number"] {
+.childs[type="number"] {
     -moz-appearance: textfield;
 }
+
+.adults[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.min-price[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.max-price[type="number"] {
+    -moz-appearance: textfield;
+}
+
 
 /* animations */
 
@@ -1496,62 +1503,3 @@ input[type="number"] {
       transform: translateX(10px);
     }
   }  
-
-  /*
-
-  .house h3::before {
-    content: url("../img/house.svg");
-    position: absolute;
-    top: 58px;
-    left: 161px;
-}
-
-.house h3 {
-    padding-top: 81px;
-}
-
-.house span {
-    margin-top: 7px;
-}
-
-.burger h3::before {
-    content: url("../img/burger.svg");
-    position: absolute;
-    right: -20px;
-    bottom: 47px;
-}
-
-.burger h3 {
-    position: relative;
-    top: 35px;
-    right: 5px;
-}
-
-.burger span {
-    position: relative;
-    right: 4px;
-    top: 40px;
-}
-
-.souvenir {
-    display: flex;
-    padding-right: 0;
-    padding-left: 42px;
-}
-
-.souvenir h3::before {
-    content: url("../img/souvenir.svg");
-    position: absolute;
-    right: 168px;
-    top: 55px;
-}
-
-.souvenir h3 {
-    padding-top: 76px;
-}
-
-.souvenir span {
-    margin-top: 7px;
-}
-
-*/
