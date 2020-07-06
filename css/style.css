@@ -821,6 +821,7 @@ input[type="checkbox"].visually-hidden {
     height: 36px;
     margin-top: 10px;
     border: 2px solid var(--basic-white);
+    border-radius: 2px;
 }
 
 .price-controls input {
@@ -829,6 +830,7 @@ input[type="checkbox"].visually-hidden {
     color: var(--basic-white);
     text-transform: uppercase;
     width: 157px;
+    border: none;
 }
 
 .price-controls ::placeholder {
@@ -869,10 +871,20 @@ input[type="checkbox"].visually-hidden {
     margin-left: 0%;
 }
 
+.scale::after {
+    content: "";
+    height: 2px;
+    width: 248px;
+    background-image: url(../img/rectangle.svg);
+    position: absolute;
+    top: 20px;
+    right: 65px;
+}
+
 .range-controls .bar {
     position: relative;
     height: 2px;
-    background: var(--basic-white);
+    background: var(--basic-white-30);
 }
 
 .range-controls .toggle-min {
@@ -900,7 +912,21 @@ input[type="checkbox"].visually-hidden {
     box-shadow: 0 2px 0 0 var(--box-shadow-color);
 }
 
-.toggle:hover {
+.toggle-min:hover {
+    position: relative;
+    top: -11px;
+    left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 9px solid var(--basic-white);
+    cursor: pointer;
+}
+
+.toggle-max:hover {
+    position: relative;
+    top: -11px;
+    left: 251px;
     width: 4px;
     height: 4px;
     border-radius: 50%;
@@ -1156,6 +1182,11 @@ input[type="checkbox"].visually-hidden {
 .element2 {
     margin-top: 7px;
     margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.type-cost:last-child {
+    padding-right: 0;
 }
 
 .hotels-list-item:nth-child(2) .element1 {
@@ -1352,11 +1383,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .arrival:focus,
-.departure:focus,
+.departure:focus {
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-whisper);
+    padding-left: 11px;
+}
+
 .adults:focus,
 .childs:focus {
     background-color: var(--basic-white);
     border: 2px solid var(--basic-whisper);
+    padding-left: 1px;
 }
 
 .arrival::-webkit-input-placeholder {
@@ -1506,6 +1543,46 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
 }
 
+.min-price::-webkit-input-placeholder {
+    color: var(--basic-white); 
+    opacity:1;
+}
+
+.min-price::-moz-placeholder {
+    color: var(--basic-white); 
+    opacity:1;
+}
+
+.min-price:-moz-placeholder {
+    color: var(--basic-white); 
+    opacity:1;
+}
+
+.min-price:-ms-input-placeholder {
+    color: var(--basic-white); 
+    opacity:1;
+}  
+
+.max-price::-webkit-input-placeholder {
+    color: var(--basic-white); 
+    opacity:1;
+}
+
+.max-price::-moz-placeholder {
+    color: var(--basic-white); 
+    opacity:1;
+}
+
+.max-price:-moz-placeholder {
+    color: var(--basic-white); 
+    opacity:1;
+}
+
+.max-price:-ms-input-placeholder {
+    color: var(--basic-white); 
+    opacity:1;
+} 
+
 /* Firefox */
 
 .childs[type="number"] {
@@ -1522,10 +1599,6 @@ input[type="checkbox"].visually-hidden {
 
 .max-price[type="number"] {
     -moz-appearance: textfield;
-}
-
-input:focus::placeholder {
-    color: var(--basic-black);
 }
 
 /* animations */
